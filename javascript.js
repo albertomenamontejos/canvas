@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    imprimirFormFoto()
+
 
     var $container,
         orig_src = new Image(),
@@ -128,7 +130,8 @@ $(document).ready(function(){
             console.log(resize_canvas);
             console.log(image_target);
             console.log($('.resize-image').get(0));
-            $(image_target).attr('src', $(resize_canvas).toDataURL("image/png",1.0));
+            // $(image_target).attr('src', );
+            console.log(resize_canvas.toDataURL("image/png",1.0));
         };
 
         function crop(){
@@ -145,6 +148,21 @@ $(document).ready(function(){
             crop_canvas.getContext('2d').drawImage(image_target, left, top, width, height, 0, 0, width, height);
             window.open(crop_canvas.toDataURL("image/png"));
         };
+
+        function imprimirFormFoto(){
+            let form = `
+        <label for="soy_foto_canvas">
+            <p>Introducir una imagen de fondo</p>
+            <input type="file" id="soy_foto_canvas">
+    <!--         style="visibility: hidden;-->
+        </label>
+        `;
+
+            $('.product-variants').append(form);
+            $(document).on('change','#soy_foto_canvas',function(){
+                readURL(this);
+            });
+        }
 
         function init(){
             $(resize_canvas).attr('id','canvas');
