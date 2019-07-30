@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="ContinueOrBreakFromFinallyBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="EmptyCatchBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="EmptyFinallyBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="EmptyTryBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="ExceptionCaughtLocallyJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="JSNonStrictModeUsed" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReturnFromFinallyBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="ThrowFromFinallyBlockJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="UnusedCatchParameterJS" enabled="false" level="INFORMATION" enabled_by_default="false" />
+  </profile>
+</component>
